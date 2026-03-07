@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obsidian Tech</title>
+    <!-- Google fonts and Font Awesome for icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- Special style changes -->
+    <style>
+        #navbar a:hover {color: #1b263b !important;}
+        #navbar i:hover {color: #1b263b !important;}
+        #navbar a.active {color: #1b263b !important;}
+        #navbar a.active i {color: #1b263b !important;}
+        #products .product:hover {box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02); transition: 0.2s ease;}
+        /* make product cards narrower to reduce space between them */
+        .product {width: 20% !important; margin: 10px 0 !important;}
+        .product-container {gap: 10px;}
+    </style>
+</head>
+
+<body style="margin: 0; padding: 0;">
+    <!-- Header section with logo and navigation bar -->
+    <section id="header" style="background-color:#e0e1dd; display: flex; align-items: center; justify-content: space-between; padding: 30px 80px; width: 100%; margin: 0; box-sizing: border-box; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);">
+        <a href = "index.html"><img src="Obsidian-Logo.png" class="logo" alt="Obsidian Tech Logo" style="width: 120px; height: auto;"></a>
+        <div>
+            <ul id="navbar" style="display: flex; align-items: center; justify-content: center; list-style: none;">
+                <li style="padding: 0px 20px;"><a class="active" href="index.html" style="color: #415a77; text-decoration: none; font-family: 'Roboto', sans-serif; font-size: 18px; font-weight: 600; transition: 0.3s ease;">Home</a></li>
+                <li style="padding: 0px 20px;"><a href="about.html" style="color: #415a77; text-decoration: none; font-family: 'Roboto', sans-serif; font-size: 18px; font-weight: 600; transition: 0.3s ease;">About Us</a></li>
+                <li style="padding: 0px 20px;"><a href="products.html" style="color: #415a77; text-decoration: none; font-family: 'Roboto', sans-serif; font-size: 18px; font-weight: 600; transition: 0.3s ease;">Products</a></li>
+                <li style="padding: 0px 20px;"><a href="contact.html" style="color: #415a77; text-decoration: none; font-family: 'Roboto', sans-serif; font-size: 18px; font-weight: 600; transition: 0.3s ease;">Contact</a></li>
+                <li style="padding: 0px 20px;"><a href="cart.html"><i class="fa-solid fa-cart-shopping" style="color: #415a77; transition: 0.3s ease;"></i></a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Featured products section -->
+    <section id="featured" style="padding: 30px 80px; width: 100%; margin: 0; box-sizing: border-box;">
+
+        <!-- Free Shipping Promo Banner -->
+        <div style="background-color: #415a77; padding: 14px 80px; display: flex; align-items: center; justify-content: center; gap: 10px;">
+            <i class="fa-solid fa-truck" style="color: #e0e1dd; font-size: 16px;"></i>
+            <span style="font-family: 'Roboto'; color: #e0e1dd; font-size: 14px; font-weight: 600; letter-spacing: 0.5px;">Free shipping on all orders over R20 000</span>
+        </div>
+
+        <h1 style="font-family: 'Roboto'; color: #1b263b; font-size: 50px; align-items: center; display: flex; justify-content: center;">Featured Products</h1>
+
+        <!-- Product List -->
+        <div class="product-container" style="display: flex; flex-wrap: wrap; gap: 40px;">
+            <div class="product" style="width: 23%; min-width: 250px; border: 1px solid #ccc; padding: 10px 12px; border-radius: 25px; cursor: pointer; box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02); margin: 15px 0;">
+                <a style="text-decoration: none;" href="product1.html">
+                <img src="macbook-air.jpg" alt="MacBook Air" style="width: 100%; border-radius: 20px;">
+                <span style="font-family: 'Roboto'; color: #778da9; font-size: 12px;">Apple</span>
+                <div class="description" style="text-align: start; padding: 10px 0;">
+                    <h5 style="font-family: 'Inconsolata'; color: #1b263b; font-size: 14px; margin: 10px 0; padding-top: 7px;">MacBook Air</h5>
+                    <div class="rating">
+                        <i class="fa-sharp fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                        <i class="fa-sharp fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                        <i class="fa-sharp fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                        <i class="fa-sharp fa-solid fa-star-half-stroke" style="color: rgb(255, 212, 59);"></i>
+                        <i class="fa-sharp fa-regular fa-star" style="color: rgb(255, 212, 59);"></i>
+                    </div>
+                    <h4 style="font-family: 'Roboto'; color: #1b263b; font-size: 18px; margin: 10px 0; font-weight: 700;">R14 999.00</h4>
+                </div>
+                </a>
+            </div>
+
+            <div class="product" style="width: 20%; min-width: 250px; border: 1px solid #ccc; padding: 10px 12px; border-radius: 25px; cursor: pointer; box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02); margin: 15px 0;">
+                <a style="text-decoration: none;" href="product2.html">
+                <img src="samsung-galaxy-flip6.jpg" alt="Samsung Galaxy Flip6" style="width: 100%; border-radius: 20px;">
+                <span style="font-family: 'Roboto'; color: #778da9; font-size: 12px;">Samsung</span>
+                <div class="description" style="text-align: start; padding: 10px 0;">
+                    <h5 style="font-family: 'Inconsolata'; color: #1b263b; font-size: 14px; margin: 10px 0; padding-top: 7px;">Galaxy Flip6</h5>
+                    <div class="rating">
+                        <i class="fa-sharp fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                        <i class="fa-sharp fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                        <i class="fa-sharp fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                        <i class="fa-sharp fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                        <i class="fa-sharp fa-regular fa-star" style="color: rgb(255, 212, 59);"></i>
+                    </div>
+                    <h4 style="font-family: 'Roboto'; color: #1b263b; font-size: 18px; margin: 10px 0; font-weight: 700;">R11 999.00</h4>
+                </div>
+                </a>
+            </div>
+
+            <div class="product" style="width: 23%; min-width: 250px; border: 1px solid #ccc; padding: 10px 12px; border-radius: 25px; cursor: pointer; box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02); margin: 15px 0;">
+                <a style="text-decoration: none;" href="product3.html">
+                <img src="ipad-pro.jpg" alt="iPad Pro" style="width: 100%; border-radius: 20px;">
+                <span style="font-family: 'Roboto'; color: #778da9; font-size: 12px;">Apple</span>
+                <div class="description" style="text-align: start; padding: 10px 0;">
+                    <h5 style="font-family: 'Inconsolata'; color: #1b263b; font-size: 14px; margin: 10px 0; padding-top: 7px;">iPad Pro</h5>
+                    <div class="rating">
+                        <i class="fa-sharp fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                        <i class="fa-sharp fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                        <i class="fa-sharp fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                        <i class="fa-sharp fa-solid fa-star-half-stroke" style="color: rgb(255, 212, 59);"></i>
+                        <i class="fa-sharp fa-regular fa-star" style="color: rgb(255, 212, 59);"></i>
+                    </div>
+                    <h4 style="font-family: 'Roboto'; color: #1b263b; font-size: 18px; margin: 10px 0; font-weight: 700;">R7 999.00</h4>
+                </div>
+                </a>
+            </div>
+
+            <div class="product" style="width: 23%; min-width: 250px; border: 1px solid #ccc; padding: 10px 12px; border-radius: 25px; cursor: pointer; box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02); margin: 15px 0;">
+                <a style="text-decoration: none;" href="product4.html">
+                <img src="airpods.jpg" alt="AirPods" style="width: 100%; border-radius: 20px;">
+                <span style="font-family: 'Roboto'; color: #778da9; font-size: 12px;">Apple</span>
+                <div class="description" style="text-align: start; padding: 10px 0;">
+                    <h5 style="font-family: 'Inconsolata'; color: #1b263b; font-size: 14px; margin: 10px 0; padding-top: 7px;">AirPods</h5>
+                    <div class="rating">
+                        <i class="fa-sharp fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                        <i class="fa-sharp fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                        <i class="fa-sharp fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                        <i class="fa-sharp fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                        <i class="fa-sharp fa-solid fa-star-half-stroke" style="color: rgb(255, 212, 59);"></i>
+                    </div>
+                    <h4 style="font-family: 'Roboto'; color: #1b263b; font-size: 18px; margin: 10px 0; font-weight: 700;">R1 999.00</h4>
+                </div>
+                </a>
+            </div>
+
+            <div class="product" style="width: 23%; min-width: 250px; border: 1px solid #ccc; padding: 10px 12px; border-radius: 25px; cursor: pointer; box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02); margin: 15px 0;">
+                <a style="text-decoration: none;" href="product5.html">
+                <img src="huawei-phone.jpg" alt="Huawei Pura 80 Pro" style="width: 100%; border-radius: 20px;">
+                <span style="font-family: 'Roboto'; color: #778da9; font-size: 12px;">Huawei</span>
+                <div class="description" style="text-align: start; padding: 10px 0;">
+                    <h5 style="font-family: 'Inconsolata'; color: #1b263b; font-size: 14px; margin: 10px 0; padding-top: 7px;">Huawei Pura 80 Pro</h5>
+                    <div class="rating">
+                        <i class="fa-sharp fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                        <i class="fa-sharp fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                        <i class="fa-sharp fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                        <i class="fa-sharp fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                        <i class="fa-sharp fa-solid fa-star-half-stroke" style="color: rgb(255, 212, 59);"></i>
+                    </div>
+                    <h4 style="font-family: 'Roboto'; color: #1b263b; font-size: 18px; margin: 10px 0; font-weight: 700;">R17 999.00</h4>
+                </div>
+                </a>
+            </div>
+
+            <div class="product" style="width: 23%; min-width: 250px; border: 1px solid #ccc; padding: 10px 12px; border-radius: 25px; cursor: pointer; box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02); margin: 15px 0;">
+                <a style="text-decoration: none;" href="product6.html">
+                <img src="sony-controller.jpg" alt="Sony PS4 Controller" style="width: 100%; border-radius: 20px;">
+                <span style="font-family: 'Roboto'; color: #778da9; font-size: 12px;">Sony</span>
+                <div class="description" style="text-align: start; padding: 10px 0;">
+                    <h5 style="font-family: 'Inconsolata'; color: #1b263b; font-size: 14px; margin: 10px 0; padding-top: 7px;">Sony PS4 Controller</h5>
+                    <div class="rating">
+                        <i class="fa-sharp fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                        <i class="fa-sharp fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                        <i class="fa-sharp fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                        <i class="fa-sharp fa-solid fa-star-half-stroke" style="color: rgb(255, 212, 59);"></i>
+                        <i class="fa-sharp fa-regular fa-star" style="color: rgb(255, 212, 59);"></i>
+                    </div>
+                    <h4 style="font-family: 'Roboto'; color: #1b263b; font-size: 18px; margin: 10px 0; font-weight: 700;">R399.00</h4>
+                </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

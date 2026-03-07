@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obsidian Tech</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        #navbar a:hover {color: #1b263b !important;}
+        #navbar i:hover {color: #1b263b !important;}
+        #navbar a.active {color: #1b263b !important;}
+    </style>
+</head>
+
+<body style="margin: 0; padding: 0;">
+    <!-- Header section with logo and navigation bar -->
+    <section id="header" style="background-color:#e0e1dd; display: flex; align-items: center; justify-content: space-between; padding: 30px 80px; width: 100%; margin: 0; box-sizing: border-box; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);">
+        <a href = "index.html"><img src="Obsidian-Logo.png" class="logo" alt="Obsidian Tech Logo" style="width: 120px; height: auto;"></a>
+        <div>
+            <ul id="navbar" style="display: flex; align-items: center; justify-content: center; list-style: none;">
+                <li style="padding: 0px 20px;"><a href="index.html" style="color: #415a77; text-decoration: none; font-family: 'Roboto', sans-serif; font-size: 18px; font-weight: 600; transition: 0.3s ease;">Home</a></li>
+                <li style="padding: 0px 20px;"><a href="about.html" style="color: #415a77; text-decoration: none; font-family: 'Roboto', sans-serif; font-size: 18px; font-weight: 600; transition: 0.3s ease;">About Us</a></li>
+                <li style="padding: 0px 20px;"><a class="active" href="products.html" style="color: #415a77; text-decoration: none; font-family: 'Roboto', sans-serif; font-size: 18px; font-weight: 600; transition: 0.3s ease;">Products</a></li>
+                <li style="padding: 0px 20px;"><a href="contact.html" style="color: #415a77; text-decoration: none; font-family: 'Roboto', sans-serif; font-size: 18px; font-weight: 600; transition: 0.3s ease;">Contact</a></li>
+                <li style="padding: 0px 20px;"><a href="cart.html"><i class="fa-solid fa-cart-shopping" style="color: #415a77; transition: 0.3s ease;"></i></a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="product-categories" style="padding: 30px 80px; width: 100%; margin: 0; box-sizing: border-box;">
+        <!-- Product categories -->
+        <div id="products" style="flex: 1;">
+            <h2 style="font-family: 'Roboto'; color: #1b263b; font-size: 46px; height: 54px; display: flex; align-items: center; justify-content: center;">Shop by Category</h2>
+        </div>
+
+        <!-- Smartphones & Tablets -->
+        <div class="category" style="min-width: 250px; border: 1px solid #ccc; padding: 10px 12px; border-radius: 25px; position: relative; cursor: pointer; box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02); margin: 15px 0;">
+            <a style="text-decoration: none;" href="phones-tabs.html">
+                <div class="description" style="text-align: start; padding: 10px 0;">
+                    <h5 style="font-family: 'Inconsolata'; color: #1b263b; font-size: 24px; margin: 10px 0; padding-top: 7px;">Smartphones &amp; Tablets</h5>
+                    <p style="font-family: 'Roboto'; color: #778da9; font-size: 18px;">Apple, Samsung, Huawei and more</p>
+                    <span style="font-family: 'Roboto'; color: #778da9; font-size: 14px;">Browse more</span>
+                </div>
+            </a>
+        </div>
+
+        <!-- Laptops & Computers -->
+        <div class="category" style="min-width: 250px; border: 1px solid #ccc; padding: 10px 12px; border-radius: 25px; position: relative; cursor: pointer; box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02); margin: 15px 0;">
+            <a style="text-decoration: none;" href="laptops.html">
+                <div class="description" style="text-align: start; padding: 10px 0;">
+                    <h5 style="font-family: 'Inconsolata'; color: #1b263b; font-size: 24px; margin: 10px 0; padding-top: 7px;">Laptops &amp; Computers</h5>
+                    <p style="font-family: 'Roboto'; color: #778da9; font-size: 18px;">Apple, Dell, HP and more</p>
+                    <span style="font-family: 'Roboto'; color: #778da9; font-size: 14px;">Browse more</span>
+                </div>
+            </a>
+        </div>
+
+        <!-- Accessories -->
+        <div class="category" style="min-width: 250px; border: 1px solid #ccc; padding: 10px 12px; border-radius: 25px; position: relative; cursor: pointer; box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02); margin: 15px 0;">
+            <a style="text-decoration: none;" href="accessories.html">
+                <div class="description" style="text-align: start; padding: 10px 0;">
+                    <h5 style="font-family: 'Inconsolata'; color: #1b263b; font-size: 24px; margin: 10px 0; padding-top: 7px;">Accessories</h5>
+                    <p style="font-family: 'Roboto'; color: #778da9; font-size: 18px;">Earbuds, mice, chargers and more</p>
+                    <span style="font-family: 'Roboto'; color: #778da9; font-size: 14px;">Browse more</span>
+                </div>
+            </a>
+        </div>
+
+        <!-- Gaming -->
+        <div class="category" style="min-width: 250px; border: 1px solid #ccc; padding: 10px 12px; border-radius: 25px; position: relative; cursor: pointer; box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02); margin: 15px 0;">
+            <a style="text-decoration: none;" href="gaming.html">
+                <div class="description" style="text-align: start; padding: 10px 0;">
+                    <h5 style="font-family: 'Inconsolata'; color: #1b263b; font-size: 24px; margin: 10px 0; padding-top: 7px;">Gaming</h5>
+                    <p style="font-family: 'Roboto'; color: #778da9; font-size: 18px;">Consoles, games, accessories and more</p>
+                    <span style="font-family: 'Roboto'; color: #778da9; font-size: 14px;">Browse more</span>
+                </div>
+            </a>
+        </div>
+    
+    </section>
+</body>
+
+</html>

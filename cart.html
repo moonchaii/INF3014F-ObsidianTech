@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obsidian Tech</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        #navbar a:hover {color: #1b263b !important;}
+        #navbar i:hover {color: #1b263b !important;}
+        #navbar a.active {color: #1b263b !important;}
+        #navbar a.active i {color: #1b263b !important;}
+    </style>
+</head>
+
+<body style="margin: 0; padding: 0;">
+
+    <section id="header" style="background-color:#e0e1dd; display: flex; align-items: center; justify-content: space-between; padding: 30px 80px; width: 100%; margin: 0; box-sizing: border-box; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);">
+        <a href = "index.html"><img src="Obsidian-Logo.png" class="logo" alt="Obsidian Tech Logo" style="width: 120px; height: auto;"></a>
+        <div>
+            <ul id="navbar" style="display: flex; align-items: center; justify-content: center; list-style: none;">
+                <li style="padding: 0px 20px;"><a href="index.html" style="color: #415a77; text-decoration: none; font-family: 'Roboto', sans-serif; font-size: 18px; font-weight: 600; transition: 0.3s ease;">Home</a></li>
+                <li style="padding: 0px 20px;"><a href="about.html" style="color: #415a77; text-decoration: none; font-family: 'Roboto', sans-serif; font-size: 18px; font-weight: 600; transition: 0.3s ease;">About Us</a></li>
+                <li style="padding: 0px 20px;"><a href="products.html" style="color: #415a77; text-decoration: none; font-family: 'Roboto', sans-serif; font-size: 18px; font-weight: 600; transition: 0.3s ease;">Products</a></li>
+                <li style="padding: 0px 20px;"><a href="contact.html" style="color: #415a77; text-decoration: none; font-family: 'Roboto', sans-serif; font-size: 18px; font-weight: 600; transition: 0.3s ease;">Contact</a></li>
+                <li style="padding: 0px 20px;"><a class="active" href="cart.html"><i class="fa-solid fa-cart-shopping" style="color: #415a77; transition: 0.3s ease;"></i></a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Table layout of cart -->
+    <section id="cart">
+        <table style="width: 100%; padding: 30px 80px; width: 100%; margin: 0; box-sizing: border-box; border-collapse: collapse; table-layout: fixed; white-space: nowrap;">
+            <thead style="border-bottom: 1px solid #ccc; border-top: 1px solid #ccc; font-family: 'Roboto'; color: #1b263b; font-size: 18px; border-bottom: 2px solid #ccc; height: 64px;">
+                <tr>
+                    <th>Product</th>
+                    <th>Image</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+                    <th>Remove</th>
+                </tr>
+            </thead>
+            <tbody style="font-family: 'Inconsolata'; color: #415a77; font-size: 16px;">
+                <tr style="border-bottom: 1px solid #ccc; height: 64px;">
+                    <td style="text-align: center; width: 150px;">MacBook Air</td>
+                    <td style="text-align: center; width: 150px;"><img src="macbook-air.jpg" alt="MacBook Air" style="width: 150px; height: auto;"></td>
+                    <td style="text-align: center; width: 150px;">R14 999.00</td>
+                    <td style="text-align: center; width: 150px;">1</td>
+                    <td style="text-align: center; width: 150px;">R14 999.00</td>
+                    <td style="text-align: center;"><i class="fa-regular fa-circle-xmark" style="color: #1b263b; font-size: 25px;"></i></td>
+                </tr>
+                <tr style="border-bottom: 1px solid #ccc; height: 64px;">
+                    <td style="text-align: center; width: 150px;">AirPods</td>
+                    <td style="text-align: center; width: 150px;"><img src="airpods.jpg" alt="AirPods" style="width: 150px; height: auto;"></td>
+                    <td style="text-align: center; width: 150px;">R1 999.00</td>
+                    <td style="text-align: center; width: 150px;">2</td>
+                    <td style="text-align: center; width: 150px;">R3 998.00</td>
+                    <td style="text-align: center;"><i class="fa-regular fa-circle-xmark" style="color: #1b263b; font-size: 25px;"></i></td>
+                </tr>
+        </table>
+        <div style="padding: 30px 80px; width: 100%; margin: 0; box-sizing: border-box;">
+            <a href="checkout.html">
+                <button style="background-color: #1b263b; color: #fff; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; transition: 0.3s ease; float: right;">Checkout</button>
+            </a>
+        </div>
+    </section>
+</body>
+
+</html>
