@@ -9,34 +9,82 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        #navbar a:hover {color: #1b263b !important;}        
-        #navbar i:hover {color: #1b263b !important;}
-        #navbar a.active {color: #1b263b !important;}
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
-<body style="margin: 0; padding: 0;">
+<body>
     <!-- Header and Navigation bar with logo -->
-    <section id="header" style="background-color:#e0e1dd; display: flex; align-items: center; justify-content: space-between; padding: 30px 80px; width: 100%; margin: 0; box-sizing: border-box; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);">
-        <a href = "index.html"><img src="Obsidian-Logo.png" class="logo" alt="Obsidian Tech Logo" style="width: 120px; height: auto;"></a>
+    <section id="header">
+        <a href = "home.html"><img src="Obsidian-Logo.png" class="logo" alt="Obsidian Tech Logo"></a>
             <div>
-                <ul id="navbar" style="display: flex; align-items: center; justify-content: center; list-style: none;">
-                    <li style="padding: 0px 20px;"><a href="index.html" style="color: #415a77; text-decoration: none; font-family: 'Roboto', sans-serif; font-size: 18px; font-weight: 600; transition: 0.3s ease;">Home</a></li>
-                    <li style="padding: 0px 20px;"><a class="active" href="about.html" style="color: #415a77; text-decoration: none; font-family: 'Roboto', sans-serif; font-size: 18px; font-weight: 600; transition: 0.3s ease;">About Us</a></li>
-                    <li style="padding: 0px 20px;"><a href="products.html" style="color: #415a77; text-decoration: none; font-family: 'Roboto', sans-serif; font-size: 18px; font-weight: 600; transition: 0.3s ease;">Products</a></li>
-                    <li style="padding: 0px 20px;"><a href="contact.html" style="color: #415a77; text-decoration: none; font-family: 'Roboto', sans-serif; font-size: 18px; font-weight: 600; transition: 0.3s ease;">Contact</a></li>
-                    <li style="padding: 0px 20px;"><a href="cart.html"><i class="fa-solid fa-cart-shopping" style="color: #415a77; transition: 0.3s ease;"></i></a></li>
+                <ul class="navbar">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a class="active" href="about.html">About Us</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="wishlist.html"><i class="fa-regular fa-heart"></i></a></li>
+                    <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
                 </ul>
             </div>
     </section>
 
     <!-- About Us section -->
-    <section id="about-head" style="padding: 30px 80px; width: 100%; margin: 0; box-sizing: border-box;">
-        <img src="ecommerce-about.jpg" style="width: 400px; float: left; margin-right: 30px;">
-        <h2 style="font-family: 'Roboto'; font-size: 46px; height: 54px; color: #1b263b;">About Us</h2>
-        <p style="font-family: 'Inconsolata'; font-size: 18px; color: #415a77;">Obsidian Tech aims to provide high-quality, affordable technology products to customers across South Africa. We are committed to delivering exceptional customer service and ensuring that our customers have a seamless shopping experience. Products come with tracking and much more affordable delivery pricing.</p>
+    <section id="about-head">
+        <img src="ecommerce-about.jpg">
+        <h2>About Us</h2>
+        <p>Obsidian Tech aims to provide high-quality, affordable technology products to customers across South Africa. We are committed to delivering exceptional customer service and ensuring that our customers have a seamless shopping experience. Products come with tracking and much more affordable delivery pricing.</p>
     </section>
+
+    <footer id="footer">
+    <div class="footer-grid">
+
+        <div class="footer-brand">
+            <img src="Obsidian-Logo.png" alt="Obsidian Tech Logo" class="footer-logo">
+            <p>Your go-to destination for premium tech. We stock the latest smartphones, laptops, audio, gaming gear, and smart home devices.</p>
+        </div>
+
+        <div class="footer-col">
+            <h4>Shop</h4>
+            <ul>
+                <li><a href="phones-tabs.html">Smartphones &amp; Tablets</a></li>
+                <li><a href="laptops.html">Laptops &amp; Computers</a></li>
+                <li><a href="gaming.html">Gaming &amp; Entertainment</a></li>
+                <li><a href="accessories.html">Accessories</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Company</h4>
+            <ul>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Press</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Support</h4>
+            <ul>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Shipping Policy</a></li>
+                <li><a href="#">Returns</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2026 Obsidian Tech. All rights reserved.</p>
+        <div class="footer-socials">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        </div>
+    </div>
+    </footer>
 </body>
 
 </html>

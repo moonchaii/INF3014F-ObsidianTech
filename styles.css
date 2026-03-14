@@ -1,0 +1,883 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#header {
+    background-color:#e0e1dd; 
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    padding: 30px 80px; 
+    width: 100%; 
+    margin: 0; 
+    box-sizing: border-box; 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+#header .logo {
+    width: 120px; 
+    height: auto;
+}
+
+.navbar {
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    list-style: none;
+}
+
+.navbar li {
+    padding: 0px 20px;
+}
+
+.navbar li a {
+    color: #415a77; 
+    text-decoration: none; 
+    font-family: 'Roboto', sans-serif; 
+    font-size: 18px; 
+    font-weight: 600; 
+    transition: 0.3s ease;
+}
+
+.navbar li a i {
+    color: #415a77; 
+    transition: 0.3s ease;
+}
+
+.navbar a:hover {color: #1b263b !important;}
+.navbar i:hover {color: #1b263b !important;}
+.navbar a.active {color: #1b263b !important;}
+.navbar a.active i {color: #1b263b !important;}
+
+#featured,
+#about-head,
+#product-categories,
+#checkout {
+    padding: 30px 80px; 
+    width: 100%; 
+    margin: 0; 
+    box-sizing: border-box;
+}
+
+#promo-banner {
+    background-color: #415a77; 
+    padding: 14px 80px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    gap: 10px;
+}
+
+#promo-banner i {
+    color: #e0e1dd; 
+    font-size: 16px;
+}
+
+#promo-banner span {
+    font-family: 'Roboto'; 
+    color: #e0e1dd; 
+    font-size: 14px; 
+    font-weight: 600; 
+    letter-spacing: 0.5px;
+}
+
+#featured h1 {
+    font-family: 'Roboto'; 
+    color: #1b263b; 
+    font-size: 50px; 
+    align-items: center; 
+    display: flex; 
+    justify-content: center;
+}
+
+.product-container {
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 40px;
+}
+
+.product:hover {
+    transform: translateY(-2px);
+    box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.1);
+    transition: 0.2s ease;
+}
+
+.product {
+    width: 20%; 
+    min-width: 250px; 
+    border: 1px solid #ccc; 
+    padding: 10px 12px; 
+    border-radius: 25px; 
+    cursor: pointer; 
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02); 
+    margin: 10px 0;
+    transition: 0.2s ease;
+}
+
+.product a {
+    text-decoration: none;
+}
+
+.product img {
+    width: 100%; 
+    border-radius: 20px;
+}
+
+.product span {
+    font-family: 'Roboto'; 
+    color: #778da9; 
+    font-size: 12px;
+}
+
+.product .description {
+    text-align: start; 
+    padding: 10px 0;
+}
+
+.product h5 {
+    font-family: 'Inconsolata'; 
+    color: #1b263b; 
+    font-size: 14px; 
+    margin: 10px 0; 
+    padding-top: 7px;
+}
+
+.product .rating i {
+    color: rgb(255, 212, 59);
+}
+
+.product h4 {
+    font-family: 'Roboto'; 
+    color: #1b263b; 
+    font-size: 18px; 
+    margin: 10px 0; 
+    font-weight: 700;
+}
+
+#products .product:hover {
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.1); 
+    transition: 0.2s ease;
+}
+
+#about-head img {
+    width: 400px; 
+    float: left; 
+    margin-right: 30px;
+}
+
+#about-head h2 {
+    font-family: 'Roboto'; 
+    font-size: 46px; 
+    height: 54px; 
+    color: #1b263b;
+}
+
+#about-head p {
+    font-family: 'Inconsolata'; 
+    font-size: 18px; 
+    color: #415a77;
+}
+
+#product-categories #products,
+#contact,
+#contact-form {
+    flex: 1;
+}
+
+#product-categories #products h2 {
+    font-family: 'Roboto'; 
+    color: #1b263b; 
+    font-size: 46px; 
+    height: 54px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+}
+
+.category {
+    min-width: 250px; 
+    border: 1px solid #ccc; 
+    padding: 10px 12px; 
+    border-radius: 25px; 
+    position: relative; 
+    cursor: pointer; 
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02); 
+    margin: 15px 0;
+    transition: 0.2s ease;
+}
+
+.category:hover {
+    transform: translateY(-2px);
+    box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.1);
+    transition: 0.2s ease;
+}
+
+.category a {
+    text-decoration: none;
+}
+
+.category .description {
+    text-align: start; 
+    padding: 10px 0;
+}
+
+.category h5 {
+    font-family: 'Inconsolata'; 
+    color: #1b263b; 
+    font-size: 24px; 
+    margin: 10px 0; 
+    padding-top: 7px;
+}
+
+.category p {
+    font-family: 'Roboto'; 
+    color: #778da9; 
+    font-size: 18px;
+}
+
+.category span {
+    font-family: 'Roboto'; 
+    color: #778da9; 
+    font-size: 14px;
+}
+
+#contact-info {
+    padding: 30px 80px; 
+    width: 100%; 
+    margin: 0; 
+    box-sizing: border-box; 
+    display: flex; 
+    gap: 40px;
+}
+
+#contact h2,
+#contact-form h2 {
+    font-family: 'Roboto'; 
+    color: #1b263b; 
+    font-size: 46px; 
+    height: 54px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+}
+
+#contact li {
+    font-family: 'Inconsolata'; 
+    color: #415a77; 
+    font-size: 18px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+}
+
+#contact li i {
+    color: #415a77; 
+    margin-right: 10px;
+}
+
+#contact-form form input {
+    width: 100%; 
+    padding: 10px; 
+    margin-bottom: 15px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px;
+}
+
+#contact-form form textarea {
+    width: 100%; 
+    padding: 10px; 
+    margin-bottom: 15px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px;
+}
+
+#contact-form form button { 
+     background-color: #1b263b; 
+     color: #fff; 
+     border: none; 
+     padding: 10px 20px; 
+     border-radius: 5px; 
+     cursor: pointer;
+}
+
+#cart table {
+    width: 100%; 
+    padding: 30px 80px; 
+    width: 100%; 
+    margin: 0; 
+    box-sizing: border-box; 
+    border-collapse: collapse; 
+    table-layout: fixed; 
+    white-space: nowrap;
+}
+
+#cart table thead {
+    border-bottom: 1px solid #ccc; 
+    border-top: 1px solid #ccc; 
+    font-family: 'Roboto'; 
+    color: #1b263b; 
+    font-size: 18px; 
+    border-bottom: 2px solid #ccc; 
+    height: 64px;
+}
+
+#cart table tbody {
+    font-family: 'Inconsolata'; 
+    color: #415a77; 
+    font-size: 16px;
+}
+
+#cart table tbody tr {
+    border-bottom: 1px solid #ccc; 
+    height: 64px;
+}
+
+#cart table tbody tr td {
+    text-align: center; 
+    width: 150px;
+}
+
+#cart table tbody tr td img {
+    width: 150px; 
+    height: auto;
+}
+
+#cart table tbody tr td i {
+     color: #1b263b; 
+     font-size: 25px;
+}
+
+#checking-out {
+    padding: 30px 80px; 
+    width: 100%; 
+    margin: 0; 
+    box-sizing: border-box;
+}
+
+#checking-out button {
+    background-color: #1b263b; 
+    color: #fff; 
+    border: none; 
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: 0.3s ease; 
+    float: right;
+}
+
+#checkout h1 {
+    font-family: 'Roboto'; 
+    color: #1b263b; 
+    font-size: 50px; 
+    align-items: center; 
+    display: flex; 
+    justify-content: center;
+}
+
+#checkout #checkout-layout {
+    display: flex; 
+    gap: 40px; 
+    align-items: flex-start; 
+    margin-top: 10px;
+}
+
+#checkout-layout #left {
+    flex: 1; 
+    min-width: 250px; 
+    display: flex; 
+    flex-direction: column; 
+    gap: 20px;
+}
+
+#delivery,
+#payment,
+#order {
+    border: 1px solid #ccc; 
+    padding: 10px 24px; 
+    border-radius: 25px; 
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.05);
+}
+
+#delivery div,
+#payment div,
+#order div {
+    padding: 10px 0;
+}
+
+#delivery div h5,
+#payment div h5,
+#order div h5 {
+    font-family: 'Inconsolata'; 
+    color: #1b263b; 
+    font-size: 24px; 
+    margin: 10px 0; 
+    padding-top: 7px;
+}
+
+#delivery div label,
+#payment div label {
+    display: block; 
+    font-family: 'Roboto'; 
+    color: #1b1b1b; 
+    font-size: 12px; 
+    font-weight: 600; 
+    margin-bottom: 5px;
+}
+
+#delivery div input,
+#payment div input {
+    width: 100%; 
+    padding: 10px; 
+    margin-bottom: 15px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    box-sizing: border-box;
+}
+
+#payment div div {
+    display: flex; 
+    gap: 16px;
+}
+
+#payment div div div {
+    flex: 1;
+}
+
+#payment div div label {
+    display: block; 
+    font-family: 'Roboto'; 
+    color: #1b1b1b; 
+    font-size: 12px; 
+    font-weight: 600; 
+    margin-bottom: 5px;
+}
+
+#payment div div input {
+    width: 100%; 
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    box-sizing: border-box; 
+    font-family: 'Inconsolata';
+}
+
+#right {
+    width: 350px; flex-shrink: 0;
+}
+
+#order #product {
+    display: flex; 
+    align-items: center; 
+    gap: 16px; 
+    padding-bottom: 16px; 
+    border-bottom: 1px solid #eee; 
+    margin-bottom: 16px;
+}
+
+#order #product img {
+    width: 80px; 
+    height: 80px; 
+    object-fit: cover; 
+    border-radius: 12px; 
+    border: 1px solid #eee;
+}
+
+#order #product div {
+    flex: 1;
+}
+
+#order #product div span {
+    display: block; 
+    font-family: 'Roboto'; 
+    color: #778da9; 
+    font-size: 11px;
+}
+
+#order #product div h5 {
+    font-family: 'Inconsolata'; 
+    color: #1b263b; 
+    font-size: 14px; 
+    font-weight: 700; 
+    margin: 4px 0;
+}
+
+#order #product span {
+    font-family: 'Roboto'; 
+    color: #1b263b; 
+    font-size: 14px; 
+    font-weight: 700;
+}
+
+#subtotal {
+    display: flex; 
+    justify-content: space-between; 
+    margin-bottom: 8px;
+}
+
+#shipping {
+    display: flex; 
+    justify-content: space-between; 
+    margin-bottom: 16px;
+}
+
+#subtotal-label,
+#shipping-label {
+    font-family: 'Roboto'; 
+    color: #778da9; 
+    font-size: 14px;
+}
+
+#subtotal span,
+#shipping span {
+    font-family: 'Roboto'; 
+    color: #1b263b; 
+    font-size: 14px;
+}
+
+#total {
+    display: flex; 
+    justify-content: space-between; 
+    padding-top: 14px; 
+    border-top: 2px solid #ccc; 
+    margin-bottom: 20px;
+}
+
+#total span {
+    font-family: 'Roboto'; 
+    color: #1b263b; 
+    font-size: 16px; 
+    font-weight: 700;
+}
+
+#order button {
+    width: 100%; 
+    background-color: #1b263b; 
+    color: #fff; 
+    border: none; 
+    padding: 12px 20px; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    font-family: 'Roboto'; 
+    font-size: 15px; 
+    font-weight: 600; 
+    transition: 0.3s ease;
+}
+
+#product-detail {
+    padding: 30px 80px;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    gap: 40px;
+}
+
+#product-image {
+    flex: 1;
+}
+
+#product-image img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+#product-info {
+    flex: 1;
+}
+
+#product-info h2 {
+    font-family: 'Roboto';
+    color: #1b263b;
+    font-size: 46px;
+}
+
+#product-info p {
+    color: #415a77;
+    font-size: 18px;
+}
+
+#product-info h4 {
+    font-family: 'Roboto';
+    color: #1b263b;
+    font-size: 18px;
+    margin-top: 20px;
+    font-weight: 700;
+}
+
+.qty-input {
+    width: 60px;
+    padding: 5px;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn-add-cart {
+    background-color: #1b263b;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin-left: 10px;
+}
+
+#reviews {
+    padding: 30px 80px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#reviews h3 {
+    font-family: 'Roboto';
+    color: #1b263b;
+    font-size: 32px;
+}
+
+#reviews h4 {
+    font-family: 'Roboto';
+    color: #1b263b;
+    font-size: 24px;
+    margin-top: 30px;
+}
+
+#reviews textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn-submit-review {
+    background-color: #1b263b;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.review {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.review-avatar {
+    width: 40px;
+    height: 40px;
+    border: 2px solid #1b263b;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.review-avatar i {
+    color: #1b263b;
+}
+
+.review p {
+    font-size: 16px;
+    color: #415a77;
+}
+
+.review p em {
+    margin-right: 8px;
+}
+
+.review p i {
+    color: rgb(255, 212, 59);
+}
+
+#footer {
+    background-color: #1b263b;
+    padding: 50px 80px 30px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 60px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 40px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgba(224, 225, 221, 0.15);
+}
+
+.footer-logo {
+    width: 100px;
+    height: auto;
+    filter: brightness(0) invert(1);
+    opacity: 0.85;
+}
+
+.footer-brand p {
+    font-family: 'Roboto', sans-serif;
+    color: #778da9;
+    font-size: 13px;
+    line-height: 1.7;
+    margin-top: 14px;
+    max-width: 260px;
+}
+
+.footer-col h4 {
+    font-family: 'Roboto', sans-serif;
+    color: #e0e1dd;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin-bottom: 16px;
+}
+
+.footer-col ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0;
+}
+
+.footer-col ul li a {
+    font-family: 'Roboto', sans-serif;
+    color: #778da9;
+    font-size: 13px;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.footer-col ul li a:hover {
+    color: #e0e1dd;
+}
+
+.footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 24px;
+}
+
+.footer-bottom p {
+    font-family: 'Roboto', sans-serif;
+    color: #778da9;
+    font-size: 12px;
+}
+
+.footer-socials {
+    display: flex;
+    gap: 16px;
+}
+
+.footer-socials a {
+    color: #778da9;
+    font-size: 16px;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.footer-socials a:hover {
+    color: #e0e1dd;
+}
+
+/* ── Hero Videos ── */
+.hero-video-wrap {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+}
+
+.hero-video-wrap video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(27, 38, 59, 0.45);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-overlay h2 {
+    font-family: 'Roboto', sans-serif;
+    color: #e0e1dd;
+    font-size: 42px;
+    font-weight: 700;
+    text-align: center;
+}
+
+#wishlist {
+    padding: 30px 80px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#wishlist h1 {
+    font-family: 'Roboto', sans-serif;
+    color: #1b263b;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#wishlist table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    white-space: nowrap;
+}
+
+#wishlist thead {
+    border-top: 1px solid #ccc;
+    border-bottom: 2px solid #ccc;
+    font-family: 'Roboto', sans-serif;
+    color: #1b263b;
+    font-size: 18px;
+    height: 64px;
+}
+
+#wishlist tbody {
+    font-family: 'Inconsolata', monospace;
+    color: #415a77;
+    font-size: 16px;
+}
+
+#wishlist tbody tr {
+    border-bottom: 1px solid #ccc;
+    height: 64px;
+}
+
+#wishlist tbody td {
+    text-align: center;
+    width: 150px;
+}
+
+#wishlist tbody td img {
+    width: 120px;
+    height: auto;
+}
+
+#wishlist tbody td i {
+    color: #1b263b;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.in-stock {
+    color: #4caf50;
+    font-weight: 700;
+}

@@ -1,92 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Obsidian Tech</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        #navbar a:hover {color: #1b263b !important;}
-        #navbar i:hover {color: #1b263b !important;}
-        #navbar a.active {color: #1b263b !important;}
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
-<body style="margin: 0; padding: 0;">
-    <!-- Header section with logo and navigation bar -->
-    <section id="header" style="background-color:#e0e1dd; display: flex; align-items: center; justify-content: space-between; padding: 30px 80px; width: 100%; margin: 0; box-sizing: border-box; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);">
-        <a href = "index.html"><img src="Obsidian-Logo.png" class="logo" alt="Obsidian Tech Logo" style="width: 120px; height: auto;"></a>
+<body>
+    <section id="header">
+        <a href="home.html"><img src="Obsidian-Logo.png" class="logo" alt="Obsidian Tech Logo"></a>
         <div>
-            <ul id="navbar" style="display: flex; align-items: center; justify-content: center; list-style: none;">
-                <li style="padding: 0px 20px;"><a href="index.html" style="color: #415a77; text-decoration: none; font-family: 'Roboto', sans-serif; font-size: 18px; font-weight: 600; transition: 0.3s ease;">Home</a></li>
-                <li style="padding: 0px 20px;"><a href="about.html" style="color: #415a77; text-decoration: none; font-family: 'Roboto', sans-serif; font-size: 18px; font-weight: 600; transition: 0.3s ease;">About Us</a></li>
-                <li style="padding: 0px 20px;"><a class="products.html" href="products.html" style="color: #415a77; text-decoration: none; font-family: 'Roboto', sans-serif; font-size: 18px; font-weight: 600; transition: 0.3s ease;">Products</a></li>
-                <li style="padding: 0px 20px;"><a href="contact.html" style="color: #415a77; text-decoration: none; font-family: 'Roboto', sans-serif; font-size: 18px; font-weight: 600; transition: 0.3s ease;">Contact</a></li>
-                <li style="padding: 0px 20px;"><a href="cart.html"><i class="fa-solid fa-cart-shopping" style="color: #415a77; transition: 0.3s ease;"></i></a></li>
+            <ul class="navbar">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="wishlist.html"><i class="fa-regular fa-heart"></i></a></li>
+                <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
             </ul>
         </div>
     </section>
 
-    <section id="product-detail" style="padding: 30px 80px; width: 100%; margin: 0; box-sizing: border-box; display: flex; gap: 40px;">
-        <div id="product-image" style="flex: 1;">
-            <img src="ipad-pro.jpg" alt="iPad Pro" style="width: 100%; border-radius: 20px;">
+    <section id="product-detail">
+        <div id="product-image">
+            <img src="ipad-pro.jpg" alt="iPad Pro">
         </div>
-        <div id="product-info" style="flex: 1;">
-            <h2 style="font-family: 'Roboto'; color: #1b263b; font-size: 46px; height: 54px; display: flex; align-items: center; justify-content: center;">iPad Pro</h2>
-            <p style="font-family: 'Inconsolata'; color: #415a77; font-size: 18px;">11-inch Tablet with A16 chip</p>
-            <p style="font-family: 'Inconsolata'; color: #415a77; font-size: 18px;">11-inch Liquid Retina Display</p>
-            <p style="font-family: 'Inconsolata'; color: #415a77; font-size: 18px;">128GB SSD Storage</p>
-            <p style="font-family: 'Inconsolata'; color: #415a77; font-size: 18px;">12MP Front / 12MP Back Camera</p>
-            <p style="font-family: 'Inconsolata'; color: #415a77; font-size: 18px;">Up to 24 Hours of Battery Life</p>
-            <p style="font-family: 'Inconsolata'; color: #415a77; font-size: 18px;">Touch ID</p>
-            <p style="font-family: 'Inconsolata'; color: #415a77; font-size: 18px;">Silver</p>
-            <h4 style="font-family: 'Roboto'; color: #1b263b; font-size: 18px; margin-top: 20px; font-weight: 700;">R7 999.00</h4>
-        
-            <input type="number" value="1" min="1" style="width: 60px; padding: 5px; margin-top: 20px; border: 1px solid #ccc; border-radius: 5px;">
-            <button style="background-color: #1b263b; color: #fff; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; transition: 0.3s ease; margin-left: 10px;">Add to Cart</button>
-        </div>
-    </section>
-    
-    <!-- Reviews section -->
-    <section id="reviews" style="padding: 30px 80px; width: 100%; margin: 0; box-sizing: border-box;">
-        <h3 style="font-family: 'Roboto'; color: #1b263b; font-size: 32px;">Customer Reviews</h3>
-        <!-- add review textbox -->
-        <h4 style="font-family: 'Roboto'; color: #1b263b; font-size: 24px; margin-top: 30px;">Leave a Review</h4>
-        <textarea placeholder="Write your review here" style="width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 5px;"></textarea>
-        <button type="button" style="background-color: #1b263b; color: #fff; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;">Submit Review</button>
-        <!-- manually written reviews -->
-        <div class="review" style="margin-bottom: 20px; display: flex; align-items: center; gap: 10px; border-bottom: 1px solid #ccc;">
-            <div style="width:40px; height:40px; border:2px solid #1b263b; border-radius:50%; display:flex; align-items:center; justify-content:center;">
-                <i class="fa-solid fa-user" style="color: #1b263b;"></i>
-            </div>
-            <p style="font-family: 'Inconsolata'; font-size: 16px; color: #415a77;">
-                <em style="margin-right: 8px;">user1234</em> <i class="fa-sharp fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
-                        <i class="fa-sharp fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
-                        <i class="fa-sharp fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
-                        <i class="fa-sharp fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
-                        <i class="fa-sharp fa-solid fa-star" style="color: rgb(255, 212, 59);"></i><br>
-                delivery came much quicker than expected! product in good condition
-            </p>
-        </div>
-        <div class="review" style="margin-bottom: 20px; display: flex; align-items: center; gap: 10px; border-bottom: 1px solid #ccc;">
-            <div style="width:40px; height:40px; border:2px solid #1b263b; border-radius:50%; display:flex; align-items:center; justify-content:center;">
-                <i class="fa-solid fa-user" style="color: #1b263b;"></i>
-            </div>
-            <p style="font-family: 'Inconsolata'; font-size: 16px; color: #415a77;">
-                <em style="margin-right: 8px;">user5678</em> <i class="fa-sharp fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
-                        <i class="fa-sharp fa-regular fa-star" style="color: rgb(255, 212, 59);"></i>
-                        <i class="fa-sharp fa-regular fa-star" style="color: rgb(255, 212, 59);"></i>
-                        <i class="fa-sharp fa-regular fa-star" style="color: rgb(255, 212, 59);"></i>
-                        <i class="fa-sharp fa-regular fa-star" style="color: rgb(255, 212, 59);"></i><br>
-                product didnt deliver! dont buy from this site!
-            </p>
+        <div id="product-info">
+            <h2>iPad Pro</h2>
+            <p>11-inch Tablet with A16 chip</p>
+            <p>11-inch Liquid Retina Display</p>
+            <p>128GB SSD Storage</p>
+            <p>12MP Front / 12MP Back Camera</p>
+            <p>Up to 24 Hours of Battery Life</p>
+            <p>Touch ID</p>
+            <p>Silver</p>
+            <h4>R7 999.00</h4>
+            <input type="number" value="1" min="1" class="qty-input">
+            <button class="btn-add-cart">Add to Cart</button>
         </div>
     </section>
+
+    <section id="reviews">
+        <h3>Customer Reviews</h3>
+        <h4>Leave a Review</h4>
+        <textarea placeholder="Write your review here"></textarea>
+        <button type="button" class="btn-submit-review">Submit Review</button>
+        <div class="review">
+            <div class="review-avatar"><i class="fa-solid fa-user"></i></div>
+            <p><em>user1234</em> <i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><br>delivery came much quicker than expected! product in good condition</p>
+        </div>
+        <div class="review">
+            <div class="review-avatar"><i class="fa-solid fa-user"></i></div>
+            <p><em>user5678</em> <i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-regular fa-star"></i><i class="fa-sharp fa-regular fa-star"></i><i class="fa-sharp fa-regular fa-star"></i><i class="fa-sharp fa-regular fa-star"></i><br>product didnt deliver! dont buy from this site!</p>
+        </div>
     </section>
 </body>
-
 </html>

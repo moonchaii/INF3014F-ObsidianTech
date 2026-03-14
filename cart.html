@@ -9,33 +9,29 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        #navbar a:hover {color: #1b263b !important;}
-        #navbar i:hover {color: #1b263b !important;}
-        #navbar a.active {color: #1b263b !important;}
-        #navbar a.active i {color: #1b263b !important;}
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
-<body style="margin: 0; padding: 0;">
+<body>
 
-    <section id="header" style="background-color:#e0e1dd; display: flex; align-items: center; justify-content: space-between; padding: 30px 80px; width: 100%; margin: 0; box-sizing: border-box; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);">
-        <a href = "index.html"><img src="Obsidian-Logo.png" class="logo" alt="Obsidian Tech Logo" style="width: 120px; height: auto;"></a>
+    <section id="header">
+        <a href = "home.html"><img src="Obsidian-Logo.png" class="logo" alt="Obsidian Tech Logo"></a>
         <div>
-            <ul id="navbar" style="display: flex; align-items: center; justify-content: center; list-style: none;">
-                <li style="padding: 0px 20px;"><a href="index.html" style="color: #415a77; text-decoration: none; font-family: 'Roboto', sans-serif; font-size: 18px; font-weight: 600; transition: 0.3s ease;">Home</a></li>
-                <li style="padding: 0px 20px;"><a href="about.html" style="color: #415a77; text-decoration: none; font-family: 'Roboto', sans-serif; font-size: 18px; font-weight: 600; transition: 0.3s ease;">About Us</a></li>
-                <li style="padding: 0px 20px;"><a href="products.html" style="color: #415a77; text-decoration: none; font-family: 'Roboto', sans-serif; font-size: 18px; font-weight: 600; transition: 0.3s ease;">Products</a></li>
-                <li style="padding: 0px 20px;"><a href="contact.html" style="color: #415a77; text-decoration: none; font-family: 'Roboto', sans-serif; font-size: 18px; font-weight: 600; transition: 0.3s ease;">Contact</a></li>
-                <li style="padding: 0px 20px;"><a class="active" href="cart.html"><i class="fa-solid fa-cart-shopping" style="color: #415a77; transition: 0.3s ease;"></i></a></li>
+            <ul class="navbar">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="wishlist.html"><i class="fa-regular fa-heart"></i></a></li>
+                <li><a class="active" href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
             </ul>
         </div>
     </section>
 
     <!-- Table layout of cart -->
     <section id="cart">
-        <table style="width: 100%; padding: 30px 80px; width: 100%; margin: 0; box-sizing: border-box; border-collapse: collapse; table-layout: fixed; white-space: nowrap;">
-            <thead style="border-bottom: 1px solid #ccc; border-top: 1px solid #ccc; font-family: 'Roboto'; color: #1b263b; font-size: 18px; border-bottom: 2px solid #ccc; height: 64px;">
+        <table>
+            <thead>
                 <tr>
                     <th>Product</th>
                     <th>Image</th>
@@ -45,30 +41,81 @@
                     <th>Remove</th>
                 </tr>
             </thead>
-            <tbody style="font-family: 'Inconsolata'; color: #415a77; font-size: 16px;">
-                <tr style="border-bottom: 1px solid #ccc; height: 64px;">
-                    <td style="text-align: center; width: 150px;">MacBook Air</td>
-                    <td style="text-align: center; width: 150px;"><img src="macbook-air.jpg" alt="MacBook Air" style="width: 150px; height: auto;"></td>
-                    <td style="text-align: center; width: 150px;">R14 999.00</td>
-                    <td style="text-align: center; width: 150px;">1</td>
-                    <td style="text-align: center; width: 150px;">R14 999.00</td>
-                    <td style="text-align: center;"><i class="fa-regular fa-circle-xmark" style="color: #1b263b; font-size: 25px;"></i></td>
+            <tbody>
+                <tr>
+                    <td>MacBook Air</td>
+                    <td><img src="macbook-air.jpg" alt="MacBook Air"></td>
+                    <td>R14 999.00</td>
+                    <td>1</td>
+                    <td>R14 999.00</td>
+                    <td><i class="fa-regular fa-circle-xmark"></i></td>
                 </tr>
-                <tr style="border-bottom: 1px solid #ccc; height: 64px;">
-                    <td style="text-align: center; width: 150px;">AirPods</td>
-                    <td style="text-align: center; width: 150px;"><img src="airpods.jpg" alt="AirPods" style="width: 150px; height: auto;"></td>
-                    <td style="text-align: center; width: 150px;">R1 999.00</td>
-                    <td style="text-align: center; width: 150px;">2</td>
-                    <td style="text-align: center; width: 150px;">R3 998.00</td>
-                    <td style="text-align: center;"><i class="fa-regular fa-circle-xmark" style="color: #1b263b; font-size: 25px;"></i></td>
+                <tr>
+                    <td>AirPods</td>
+                    <td><img src="airpods.jpg" alt="AirPods"></td>
+                    <td>R1 999.00</td>
+                    <td>2</td>
+                    <td>R3 998.00</td>
+                    <td><i class="fa-regular fa-circle-xmark"></i></td>
                 </tr>
         </table>
-        <div style="padding: 30px 80px; width: 100%; margin: 0; box-sizing: border-box;">
+        <div id="checking-out">
             <a href="checkout.html">
-                <button style="background-color: #1b263b; color: #fff; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; transition: 0.3s ease; float: right;">Checkout</button>
+                <button>Checkout</button>
             </a>
         </div>
     </section>
+
+    <footer id="footer">
+    <div class="footer-grid">
+
+        <div class="footer-brand">
+            <img src="Obsidian-Logo.png" alt="Obsidian Tech Logo" class="footer-logo">
+            <p>Your go-to destination for premium tech. We stock the latest smartphones, laptops, audio, gaming gear, and smart home devices.</p>
+        </div>
+
+        <div class="footer-col">
+            <h4>Shop</h4>
+            <ul>
+                <li><a href="phones-tabs.html">Smartphones &amp; Tablets</a></li>
+                <li><a href="laptops.html">Laptops &amp; Computers</a></li>
+                <li><a href="gaming.html">Gaming &amp; Entertainment</a></li>
+                <li><a href="accessories.html">Accessories</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Company</h4>
+            <ul>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Press</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Support</h4>
+            <ul>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Shipping Policy</a></li>
+                <li><a href="#">Returns</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2026 Obsidian Tech. All rights reserved.</p>
+        <div class="footer-socials">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        </div>
+    </div>
+    </footer>
 </body>
 
 </html>
