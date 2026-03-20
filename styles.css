@@ -1,3 +1,7 @@
+/* responsive device overriding done at bottom of code from largest device to smallest
+   use emulator or ctrl+shift+i and find device emulation (phone/tab icon)
+   works for almost all listed devices (nest hub max product spacing slightly off) */
+
 body {
     margin: 0;
     padding: 0;
@@ -880,4 +884,962 @@ body {
 .in-stock {
     color: #4caf50;
     font-weight: 700;
+}
+
+/* css for small laptop/large tablet screen size */
+@media only screen and (max-width: 1024px) {
+
+    /* home page and universal header and footer */
+    #header {
+        padding: 24px 50px;
+    }
+
+    #header .logo {
+        width: 100px;
+        height: auto;
+    }
+
+    .navbar li {
+        padding: 0 14px;
+    }
+
+    .navbar li a {
+        font-size: 1rem;
+    }
+
+    #promo-banner {
+        padding: 14px 50px;
+    }
+
+    .hero-video-wrap {
+        height: 340px;
+    }
+
+    .hero-overlay h2 {
+        font-size: 2rem;
+    }
+
+    #featured {
+        padding: 28px 50px;
+    }
+
+    #featured h1 {
+        font-size: 2.4rem;
+    }
+
+    .product-container {
+        gap: 24px;
+    }
+
+    .product {
+        width: calc(33.333% - 16px);
+        min-width: unset;
+        box-sizing: border-box;
+    }
+
+    #footer {
+        padding: 40px 50px 28px;
+        margin-top: 50px;
+    }
+
+    .footer-grid {
+        grid-template-columns: 2fr 1fr 1fr 1fr;
+        gap: 30px;
+    }
+
+    /* about page */
+    #about-head {
+        padding: 28px 50px;
+    }
+
+    #about-head img {
+        width: 340px;
+    }
+
+    #about-head h2 {
+        font-size: 2.4rem;
+        height: auto;
+    }
+
+    #about-head p {
+        font-size: 1rem;
+    }
+
+    /* product categories page */
+    #product-categories {
+        padding: 28px 50px;
+    }
+
+    #product-categories #products h2 {
+        font-size: 2.4rem;
+        height: auto;
+    }
+
+    .category {
+        margin: 12px 0;
+        padding: 12px 18px;
+    }
+
+    .category h5 {
+        font-size: 1.2rem;
+    }
+
+    .category p {
+        font-size: 1rem;
+    }
+
+    /* individual product pages */
+    #product-detail {
+        padding: 28px 50px;
+        gap: 30px;
+    }
+
+    #product-info h2 {
+        font-size: 2.2rem;
+    }
+
+    #product-info p {
+        font-size: 1rem;
+    }
+
+    #product-info h4 {
+        font-size: 1.1rem;
+    }
+
+    #reviews {
+        padding: 28px 50px;
+    }
+
+    #reviews h3 {
+        font-size: 1.8rem;
+    }
+
+    #reviews h4 {
+        font-size: 1.3rem;
+    }
+
+    /* contacts page */
+    #contact-info {
+        padding: 28px 50px;
+        gap: 30px;
+    }
+
+    #contact h2,
+    #contact-form h2 {
+        font-size: 2.2rem;
+        height: auto;
+    }
+
+    #contact li {
+        font-size: 1rem;
+    }
+
+    /* wishlist page */
+    #wishlist {
+        padding: 28px 50px;
+    }
+
+    #wishlist h1 {
+        font-size: 2.4rem;
+    }
+
+    #wishlist table {
+        font-size: 0.95rem;
+    }
+
+    #wishlist thead th {
+        font-size: 0.95rem;
+    }
+
+    #wishlist tbody td img {
+        width: 100px;
+    }
+
+    /* cart page */
+    #cart {
+        padding: 28px 50px;
+    }
+
+    #cart table {
+        font-size: 0.95rem;
+    }
+
+    #cart table tbody tr td img {
+        width: 120px;
+    }
+
+    /* checkout/order summary page */
+    #checkout {
+        padding: 28px 50px;
+    }
+
+    #checkout h1 {
+        font-size: 2.4rem;
+    }
+
+    #checkout #checkout-layout {
+        gap: 30px;
+    }
+
+    #right {
+        width: 320px;
+    }
+
+    #delivery div h5,
+    #payment div h5,
+    #order div h5 {
+        font-size: 1.2rem;
+    }
+
+    #order #product img {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+/* css for tablet screen size (portrait) */
+@media only screen and (max-width: 768px) {
+
+    /* home page and universal header and footer */
+    #header {
+        padding: 20px 30px;
+    }
+
+    #header .logo {
+        width: 90px;
+        height: auto;
+    }
+
+    .navbar li {
+        padding: 0 10px;
+    }
+
+    .navbar li a {
+        font-size: 1rem;
+    }
+
+    #promo-banner {
+        padding: 12px 30px;
+        font-size: 12px;
+    }
+
+    .hero-video-wrap {
+        height: 280px;
+    }
+
+    .hero-overlay h2 {
+        font-size: 1.8rem;
+    }
+
+    #featured {
+        padding: 24px 30px;
+    }
+
+    #featured h1 {
+        font-size: 2rem;
+    }
+
+    .product-container {
+        gap: 20px;
+    }
+
+    .product {
+        width: calc(50% - 10px);
+        min-width: unset;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    #footer {
+        padding: 36px 30px 24px;
+        margin-top: 40px;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 24px;
+    }
+
+    .footer-brand {
+        grid-column: span 2;
+    }
+
+    .footer-brand p {
+        max-width: 100%;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 12px;
+        text-align: center;
+    }
+
+    /* about page */
+    #about-head {
+        padding: 24px 30px;
+    }
+
+    #about-head img {
+        width: 300px;
+    }
+
+    #about-head h2 {
+        font-size: 2rem;
+        height: auto;
+    }
+
+    #about-head p {
+        font-size: 1rem;
+    }
+
+    /* product categories page */
+    #product-categories {
+        padding: 24px 30px;
+    }
+
+    #product-categories #products h2 {
+        font-size: 2rem;
+        height: auto;
+        margin-bottom: 16px;
+    }
+
+    .category {
+        margin: 10px 0;
+        padding: 10px 16px;
+    }
+
+    .category h5 {
+        font-size: 1.1rem;
+    }
+
+    .category p {
+        font-size: 0.95rem;
+    }
+
+    .category span {
+        font-size: 0.85rem;
+    }
+
+    /* individual product pages */
+    #product-detail {
+        flex-direction: column;
+        padding: 24px 30px;
+        gap: 24px;
+    }
+
+    #product-info h2 {
+        font-size: 2rem;
+    }
+
+    #product-info p {
+        font-size: 1rem;
+    }
+
+    #product-info h4 {
+        font-size: 1.1rem;
+    }
+
+    #reviews {
+        padding: 24px 30px;
+    }
+
+    #reviews h3 {
+        font-size: 1.6rem;
+    }
+
+    #reviews h4 {
+        font-size: 1.2rem;
+    }
+
+    .review p {
+        font-size: 0.95rem;
+    }
+
+    /* contacts page */
+    #contact-info {
+        flex-direction: column;
+        padding: 24px 30px;
+        gap: 24px;
+    }
+
+    #contact h2,
+    #contact-form h2 {
+        font-size: 2rem;
+        height: auto;
+    }
+
+    #contact li {
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+
+    #contact-form form input,
+    #contact-form form textarea {
+        font-size: 0.95rem;
+        box-sizing: border-box;
+    }
+
+    #contact-form form button {
+        width: 100%;
+        padding: 10px;
+    }
+
+    /* wishlist page */
+    #wishlist {
+        padding: 24px 30px;
+    }
+
+    #wishlist h1 {
+        font-size: 2rem;
+        margin-bottom: 24px;
+    }
+
+    #wishlist table {
+        font-size: 0.85rem;
+        white-space: normal;
+    }
+
+    #wishlist thead th {
+        font-size: 0.85rem;
+        padding: 0 6px;
+    }
+
+    #wishlist tbody td {
+        padding: 0 6px;
+        width: auto;
+        white-space: normal;
+        word-break: break-word;
+    }
+
+    #wishlist tbody td img {
+        width: 80px;
+    }
+
+    .btn-add-cart {
+        padding: 8px 10px;
+        font-size: 0.8rem;
+    }
+
+    /* cart page */
+    #cart {
+        padding: 24px 30px;
+    }
+
+    #cart table {
+        font-size: 0.85rem;
+        white-space: normal;
+    }
+
+    #cart table thead th {
+        font-size: 0.85rem;
+        padding: 0 6px;
+    }
+
+    #cart table tbody tr td {
+        padding: 0 6px;
+        width: auto;
+        white-space: normal;
+        word-break: break-word;
+    }
+
+    #cart table tbody tr td img {
+        width: 80px;
+    }
+
+    #checking-out button {
+        float: none;
+        width: 100%;
+        padding: 12px;
+    }
+
+    /* checkout/order summary page */
+    #checkout {
+        padding: 24px 30px;
+    }
+
+    #checkout h1 {
+        font-size: 2rem;
+        margin-bottom: 16px;
+    }
+
+    #checkout #checkout-layout {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #right,
+    #checkout-layout #left {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    #delivery,
+    #payment,
+    #order {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    #delivery div h5,
+    #payment div h5,
+    #order div h5 {
+        font-size: 1.1rem;
+    }
+
+    #delivery div input,
+    #payment div input {
+        font-size: 0.95rem;
+        margin-bottom: 10px;
+    }
+
+    #payment div div {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    #order #product img {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+/* css for phone screen size */
+@media only screen and (max-width: 480px) {
+    /* home page and universal header and footer */
+    #header {
+        padding: 12px 16px;
+    }
+
+    #header .logo {
+        height: auto;
+        width: 70px;
+    }
+
+    .navbar {
+        gap: 0;
+        padding: 0;
+    }
+
+    .navbar li {
+        padding: 0 6px;
+    }
+
+    .navbar li a {
+        font-size: 0.8rem;
+    }
+
+    #promo-banner {
+        font-size: 10px;
+        padding: 10px 16px;
+    }
+
+    .hero-video-wrap {
+        height: 180px;
+    }
+
+    .hero-overlay h2 {
+        font-size: 1.6rem;
+    }
+
+    #featured {
+        padding: 10px 16px;
+    }
+
+    #featured h1 {
+        font-size: 1.5rem;
+    }
+
+    .product-container {
+        gap: 8px;
+    }   
+
+    .product {
+        width: calc(50% - 4px);
+        min-width: unset;
+        margin: 0;
+        padding: 6px 8px;
+        box-sizing: border-box;
+    }
+
+    .product img {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .product h5 {
+        font-size: 0.75rem;
+    }
+
+    .product h4 {
+        font-size: 0.85rem;
+    }
+
+    .product span {
+        font-size: 0.7rem;
+    }
+
+    .product .rating i {
+        font-size: 0.7rem;
+    }
+
+    #footer {
+        padding: 24px 16px 16px;
+        margin-top: 20px;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        padding-bottom: 24px;
+    }
+
+    .footer-brand {
+        grid-column: span 2;
+    }
+
+    .footer-brand p {
+        font-size: 0.75rem;
+        max-width: 100%;
+    }
+
+    .footer-col h4 {
+        font-size: 0.8rem;
+        margin-bottom: 10px;
+    }
+
+    .footer-col ul li a {
+        font-size: 0.75rem;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 12px;
+        text-align: center;
+    }
+
+    .footer-bottom p {
+        font-size: 0.7rem;
+    }
+
+    .footer-socials a {
+        font-size: 0.9rem;
+    }
+
+    /* about page*/
+    #about-head {
+        padding: 20px 16px;
+    }
+
+    #about-head img {
+        width: 100%;
+        float: none;
+        margin-right: 0;
+        margin-bottom: 16px;
+        border-radius: 12px;
+    }
+
+    #about-head h2 {
+        font-size: 1.8rem;
+        height: auto;
+    }
+
+    #about-head p {
+        font-size: 0.9rem;
+    }
+
+    /* product categories page */
+    #product-categories {
+        padding: 20px 16px;
+    }
+
+    #product-categories #products h2 {
+        font-size: 1.8rem;
+        height: auto;
+        margin-bottom: 16px;
+    }
+
+    .category {
+        margin: 8px 0;
+        padding: 8px 12px;
+    }
+
+    .category h5 {
+        font-size: 1rem;
+    }
+
+    .category p {
+        font-size: 0.85rem;
+    }
+
+    .category span {
+        font-size: 0.75rem;
+    }
+
+    /* individual product pages */
+    #product-detail {
+        flex-direction: column;
+        padding: 20px 16px;
+        gap: 20px;
+    }
+
+    #product-image img {
+        border-radius: 12px;
+    }
+
+    #product-info h2 {
+        font-size: 1.6rem;
+    }
+
+    #product-info p {
+        font-size: 0.9rem;
+    }
+
+    #product-info h4 {
+        font-size: 1rem;
+        margin-top: 12px;
+    }
+
+    .qty-input {
+        width: 50px;
+        padding: 4px;
+        margin-top: 12px;
+    }
+
+    .btn-add-cart {
+        padding: 8px 14px;
+        font-size: 0.85rem;
+        margin-left: 6px;
+    }
+
+    #reviews {
+        padding: 20px 16px;
+    }
+
+    #reviews h3 {
+        font-size: 1.3rem;
+    }
+
+    #reviews h4 {
+        font-size: 1rem;
+        margin-top: 16px;
+    }
+
+    #reviews textarea {
+        font-size: 0.85rem;
+    }
+
+    .btn-submit-review {
+        padding: 8px 14px;
+        font-size: 0.85rem;
+    }
+
+    .review p {
+        font-size: 0.85rem;
+    }
+
+    /* contacts page */
+    #contact-info {
+        flex-direction: column;
+        padding: 20px 16px;
+        gap: 24px;
+    }
+
+    #contact h2,
+    #contact-form h2 {
+        font-size: 1.6rem;
+        height: auto;
+        justify-content: center;
+    }
+
+    #contact li {
+        font-size: 0.9rem;
+        justify-content:center;
+        gap: 8px;
+        margin-bottom: 10px;
+    }
+
+    #contact-form form input {
+        font-size: 0.85rem;
+        padding: 8px 8px;
+        box-sizing: border-box;
+    }
+
+    #contact-form form textarea {
+        font-size: 0.85rem;
+        padding: 8px 8px;
+        box-sizing: border-box;
+    }
+
+    #contact-form form button {
+        width: 100%;
+        padding: 10px;
+        font-size: 0.85rem;
+    }
+
+    /* wishlist page */
+    #wishlist {
+        padding: 20px 16px;
+    }
+
+    #wishlist h1 {
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+    }
+
+    #wishlist table {
+        font-size: 0.75rem;
+        white-space: normal;
+    }
+
+    #wishlist thead th {
+        font-size: 0.75rem;
+        padding: 0 4px;
+    }
+
+    #wishlist tbody td {
+        padding: 0 4px;
+        width: auto;
+        white-space: normal;
+        word-break: break-word;
+        font-size: 0.75rem;
+    }
+
+    #wishlist tbody td img {
+        width: 60px;
+    }
+
+    /* hide availability and image columns on mobile (can't fit full wishlist table) */
+    #wishlist thead th:nth-child(4),
+    #wishlist tbody td:nth-child(4),
+    #wishlist thead th:nth-child(2),
+    #wishlist tbody td:nth-child(2) {
+        display: none;
+    }
+
+    .btn-add-cart {
+        padding: 6px 8px;
+        font-size: 0.6rem;
+        margin-left: 0;
+    }
+
+    /* cart page */
+    #cart {
+        padding: 20px 16px;
+    }
+
+    #cart table {
+        font-size: 0.75rem;
+        white-space: normal;
+    }
+
+    #cart table thead th {
+        font-size: 0.75rem;
+        padding: 0 4px;
+    }
+
+    #cart table tbody tr td {
+        padding: 0 4px;
+        width: auto;
+        white-space: normal;
+        word-break: break-word;
+        font-size: 0.65rem;
+    }
+
+    #cart table tbody tr td i {
+        font-size: 1.1rem;
+    }
+
+    /* hide image column on mobile (can't fit all columns on mobile) */
+    #cart table thead th:nth-child(2),
+    #cart table tbody td:nth-child(2) {
+        display: none;
+    }
+
+    #checking-out {
+        padding: 16px 0;
+    }
+
+    #checking-out button {
+        float: none;
+        width: 100%;
+        padding: 12px;
+        font-size: 0.9rem;
+    }
+
+    /* checkout/order summary page */
+    #checkout {
+        padding: 20px 16px;
+    }
+
+    #checkout h1 {
+        font-size: 1.8rem;
+        margin-bottom: 16px;
+    }
+
+    #checkout #checkout-layout {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #right,
+    #checkout-layout #left {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    #delivery,
+    #payment,
+    #order {
+        width: 100%;
+        padding: 10px 16px;
+        border-radius: 16px;
+        box-sizing: border-box;
+    }
+
+    #delivery div h5,
+    #payment div h5,
+    #order div h5 {
+        font-size: 1rem;
+    }
+
+    #delivery div label,
+    #payment div label {
+        font-size: 0.75rem;
+    }
+
+    #delivery div input,
+    #payment div input {
+        padding: 8px;
+        font-size: 0.85rem;
+        margin-bottom: 10px;
+    }
+
+    #payment div div {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    #order #product img {
+        width: 60px;
+        height: 60px;
+    }
+
+    #order #product div h5,
+    #order #product span {
+        font-size: 0.8rem;
+    }
+
+    #order #product div span,
+    #subtotal-label,
+    #shipping-label,
+    #subtotal span,
+    #shipping span,
+    #total span {
+        font-size: 0.8rem;
+    }
+
+    #order button {
+        font-size: 0.85rem;
+        padding: 10px;
+    }
 }
